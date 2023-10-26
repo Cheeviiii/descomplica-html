@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="GET">
+      <input
+        type="password"
+        placeholder="Passowrd"
+        name="senha"
+        id="senha"
+        require
+        pattern="[A-Z]{3}[0-9]{4}"
+      />
+    </form>
+  </body>
+
+  <script>
+    var senha = document.querySelector('#senha')
+
+    var texto = senha.value
+
+    console.log(texto)
+  </script>
+</html>
